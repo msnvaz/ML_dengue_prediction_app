@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './DengueForm.css';
+import SriLankaMap from './SriLankaMap';
 
 const DengueForm = () => {
   const [provinces, setProvinces] = useState([]);
@@ -64,6 +65,26 @@ const DengueForm = () => {
       });
     } else {
       setInputs({ ...inputs, [name]: value });
+    }
+  };
+
+  // Handle district selection from map
+  const handleMapDistrictClick = (selectedDistrict) => {
+    // Find which province this district belongs to
+    let foundProvince = "";
+    for (const [province, districts] of Object.entries(districtsByProvince)) {
+      if (districts.includes(selectedDistrict)) {
+        foundProvince = province;
+        break;
+      }
+    }
+    
+    if (foundProvince) {
+      setInputs({
+        ...inputs,
+        province: foundProvince,
+        district: selectedDistrict
+      });
     }
   };
 
@@ -135,15 +156,15 @@ const DengueForm = () => {
       display: 'flex',
       gap: '0px',
       width: '100%',
-      maxWidth: '1000px',
+      maxWidth: '1200px',
       position: 'relative',
       zIndex: 2,
       background: 'rgba(255, 255, 255, 0.95)',
       backdropFilter: 'blur(10px)',
       borderRadius: '16px',
-      padding: '40px',
+      padding: '24px',
       boxShadow: '0 15px 35px rgba(0,0,0,0.2)',
-      alignItems: 'space-evenly'
+      alignItems: 'stretch'
     },
     formCard: {
       flex: '1',
@@ -153,15 +174,17 @@ const DengueForm = () => {
       paddingRight: '0px'
     },
     resultsCard: {
-      flex: '1',
-      maxWidth: '400px',
+      flex: '1.5',
+      maxWidth: '700px',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
+      justifyContent: 'flex-start',
+      alignItems: 'stretch',
       borderLeft: '2px solid rgba(102, 126, 234, 0.2)',
-      paddingLeft: '40px',
-      marginLeft: '40px'
+      paddingLeft: '24px',
+      marginLeft: '24px',
+      marginRight: '30px',
+      width: '100%'
     },
     title: {
       fontSize: '2rem',
@@ -488,6 +511,13 @@ const DengueForm = () => {
               </p>
             </div>
           )}
+          
+          {/* Sri Lanka Map */}
+          <SriLankaMap 
+            selectedDistrict={inputs.district}
+            onDistrictClick={handleMapDistrictClick}
+            coordinates={result?.coordinates}
+          />
         </div>
       </div>
 
