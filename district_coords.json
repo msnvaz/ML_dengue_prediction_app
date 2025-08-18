@@ -1,0 +1,102 @@
+{
+  "Ampara": {
+    "latitude": 7.275923,
+    "longitude": 81.693474
+  },
+  "Anuradhapura": {
+    "latitude": 8.330404,
+    "longitude": 80.42882
+  },
+  "Badulla": {
+    "latitude": 6.994728,
+    "longitude": 81.03797
+  },
+  "Batticaloa": {
+    "latitude": 7.697715,
+    "longitude": 81.65106
+  },
+  "Colombo": {
+    "latitude": 6.924429,
+    "longitude": 79.90725
+  },
+  "Galle": {
+    "latitude": 6.080843,
+    "longitude": 80.23373
+  },
+  "Gampaha": {
+    "latitude": 7.065026,
+    "longitude": 79.96622
+  },
+  "Hambantota": {
+    "latitude": 5.940246,
+    "longitude": 80.55
+  },
+  "Jaffna": {
+    "latitude": 9.66608,
+    "longitude": 80.034874
+  },
+  "Kalutara": {
+    "latitude": 6.572935,
+    "longitude": 80.02519
+  },
+  "Kandy": {
+    "latitude": 7.275923,
+    "longitude": 80.62659
+  },
+  "Kegalle": {
+    "latitude": 7.275923,
+    "longitude": 80.32176
+  },
+  "Kilinochchi": {
+    "latitude": 9.384886,
+    "longitude": 80.38228
+  },
+  "Kurunegala": {
+    "latitude": 7.486819,
+    "longitude": 80.37352
+  },
+  "Mannar": {
+    "latitude": 8.963093,
+    "longitude": 79.96543
+  },
+  "Matale": {
+    "latitude": 7.486819,
+    "longitude": 80.52632
+  },
+  "Matara": {
+    "latitude": 6.151143,
+    "longitude": 81.127815
+  },
+  "Moneragala": {
+    "latitude": 6.85413,
+    "longitude": 81.35636
+  },
+  "Mulativu": {
+    "latitude": 9.244288,
+    "longitude": 80.789246
+  },
+  "Nuwara Eliya": {
+    "latitude": 6.994728,
+    "longitude": 80.73418
+  },
+  "Polonnaruwa": {
+    "latitude": 7.908612,
+    "longitude": 81.01536
+  },
+  "Puttalam": {
+    "latitude": 8.04921,
+    "longitude": 79.84615
+  },
+  "Ratnapura": {
+    "latitude": 6.713532,
+    "longitude": 80.38688
+  },
+  "Trincomalee": {
+    "latitude": 8.611599,
+    "longitude": 81.170395
+  },
+  "Vavuniya": {
+    "latitude": 8.752197,
+    "longitude": 80.53448
+  }
+}

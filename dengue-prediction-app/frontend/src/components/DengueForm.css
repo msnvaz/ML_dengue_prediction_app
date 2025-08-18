@@ -1,0 +1,28 @@
+/* Placeholder text styling */
+.dengue-input::placeholder {
+  color: #9ca3af;
+  opacity: 1;
+  font-style: italic;
+}
+
+.dengue-input::-webkit-input-placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.dengue-input::-moz-placeholder {
+  color: #9ca3af;
+  opacity: 1;
+  font-style: italic;
+}
+
+.dengue-input:-ms-input-placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.dengue-input:-moz-placeholder {
+  color: #9ca3af;
+  opacity: 1;
+  font-style: italic;
+}
